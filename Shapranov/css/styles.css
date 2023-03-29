@@ -63,6 +63,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -79,10 +80,8 @@
 
 .navigation ul {
     display: flex;
-}
-
-.navigation li:not(:last-child) {
-    margin-right: 42px;
+    flex-wrap: wrap;
+    grid-column-gap: 42px;
 }
 
 .navigation a:hover {
@@ -170,7 +169,7 @@
   line-height: 58px;
   font-weight: 700;
   color: #fff;
-  transition: background-color 0.2s easy-in;
+  transition: .2s;
 }
 
 .form-button:hover {
